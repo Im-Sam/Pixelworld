@@ -1,0 +1,135 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
+        <link href="scripting/jquery-ui.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://assets.pixelworldrp.com/fonts/pro.min.css">
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <title>PixelWorld Coords Saver</title>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 text-right rounded" style="background:rgba(255,255,255,0.6); position: absolute; right:15px; top:110px; max-width:110px; display:none;" id="showCoords">
+                <span id="nuiX"></span> :<strong>X</strong><br>
+                <span id="nuiY"></span> :<strong>Y</strong><br>
+                <span id="nuiZ"></span> :<strong>Z</strong><br>
+                <span id="nuiH"></span> :<strong>H</strong>
+                </div>
+            </div>
+            <div id="copyRow">
+                <div id="jsonCopy" style="display:none;"></div>
+                <div id="stndCopy" style="display:none;"></div>
+                <div id="tableCopy" style="display:none;"></div>
+                <div id="vector3Copy" style="display:none;"></div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="staticBackdrop" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="staticBackdropLabel">PixelWorld Coordinates Menu</h5>
+                  <button type="button" class="close" data-dismiss="modal" id="closeWindow2" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                    <div class="text-center mb-2">Current Coordinates<br>
+                    <strong>X:</strong> <span id="xpos"></span> <strong>Y:</strong> <span id="ypos"></span> <strong>Z:</strong> <span id="zpos"></span> <strong>H:</strong> <span id="hpos"></span></div>
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item">
+                          <a class="nav-link active" id="save-tab" data-toggle="tab" href="#save" role="tab" aria-controls="save" aria-selected="true">Save Coordinates</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" id="copy1-tab" data-toggle="tab" href="#copy1" role="tab" aria-controls="copy1" aria-selected="false">Copy Coordinates</a>
+                        </li>
+                      </ul>
+                      <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active p-2" id="save" role="tabpanel" aria-labelledby="home-tab">
+                            <div class="container mt-3" id="success" style="display:none;">
+                                <div class="row">
+                                    <div class="col-12 text-center">
+                                        <i class="fad fa-check-circle text-success fa-8x"></i>
+                                    </div>
+                                </div>
+                                <div class="row mt-2">
+                                    <div class="col-6 offset-3"><div class="alert alert-success text-center">Location Saved</div></div>
+                                </div>
+                            </div>
+                            <div class="container" id="formToFillOut">
+                                <div class="row">
+                                    <div class="col-6 p-2">
+                                        <label for="xposText">X Position:</label>
+                                        <input type="text" id="xposText" class="form-control" readonly>
+                                    </div>
+                                    <div class="col-6 p-2">
+                                        <label for="yposText">Y Position:</label>
+                                        <input type="text" id="yposText" class="form-control" readonly>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6 p-2">
+                                        <label for="zposText">Z Position:</label>
+                                        <input type="text" id="zposText" class="form-control" readonly>
+                                    </div>
+                                    <div class="col-6 p-2">
+                                        <label for="hposText">Heading:</label>
+                                        <input type="text" id="hposText" class="form-control" readonly>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 p-2">
+                                        <label for="saveType">Save As:</label>
+                                        <select name="saveType" id="saveType" class="form-control form-control-sm">
+                                            <option value="" selected disabled>Please Select</option>
+                                            <option value="spawn">Default Spawn Position</option>
+                                            <option value="reference">Database Reference</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 p-2">
+                                        <label for="saveName">Save As:</label>
+                                        <input type="text" id="saveName" name="saveName" class="form-control form-control-lg">
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="tab-pane fade p-2" id="copy1" role="tabpanel" aria-labelledby="profile-tab">
+                            <div class="container">
+                                <div class="row mb-3">
+                                    <div class="col-12 text-center">By Selecting a button below, you will close this Interface, and the coordinates you are currently standing at will be copied to your clipboard, in the requested structure.</div>
+                                </div>
+                                <div class="row justify-content-center">
+                                    <button class="btn btn-sm btn-primary m-1" id="json">JSON String</button>
+                                    <button class="btn btn-sm btn-primary m-1" id="coordTable">Table Structure</button>
+                                    <button class="btn btn-sm btn-primary m-1" id="normCoords">Standard</button>
+                                    <button class="btn btn-sm btn-primary m-1" id="vector3">Vector3</button>
+                                </div>
+                            </div>
+
+                        </div>
+                      </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-success" id="saveLocation" style="display:none;">Save Location</button>
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal" id="closeWindow" style="display:none;">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="app.js"></script>
+    </body>
+</html>

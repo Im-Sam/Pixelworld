@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://assets.pixelworldrp.com/bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://assets.pixelworldrp.com/fonts/pro.min.css">
+        <link href="scripting/jquery-ui.css" rel="stylesheet">
+
+        <title>PixelWorld Notification</title>
+    </head>
+    <body>
+
+        <div class="fixed-bottom" id="showNotification" style="display:none">
+            <div class="container" style="background: rgba(255,255,255,0.5); border-radius: 5px; position:absolute; right:20px; bottom:10px; min-width:300px; max-width: 300px;"><div class="row"><div class="col-12 p-0 pl-1" id="title"><small>Noise Level</small></div></div><div class="row"><div class="col-12 text-center p-2 my-auto">
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" id="indicator" aria-valuenow="0" style="width: 0%" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+            </div></div></div>
+        </div>
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://assets.pixelworldrp.com/jquery/jquery-3.4.1.min.js"></script>
+        <script src="https://assets.pixelworldrp.com/popper/popper.min.js"></script>
+        <script src="https://assets.pixelworldrp.com/bootstrap/js/bootstrap.js"></script>
+        <script src="noise.js"></script>
+    </body>
+</html>

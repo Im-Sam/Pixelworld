@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://assets.pixelworldrp.com/fonts/pro.min.css">
+    <title>PixelWorld HUD</title>
+  </head>
+  <body>
+        <div class="fixed-bottom mb-3">
+            <div class="bottom-stuff">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12 pl-1 textSize my-auto text-light mb-0"><i class="fad fa-clock fa-fw"></i> <span id="timeBlock"></span></div>
+                    </div>
+                    <div class="row" id="vehicleInfo" style="display:none;">
+                        <div class="col-12 pl-1 textSize my-auto text-light mb-0"><span id="fuelIcon"></span> <span id="vehicleFuel" class="text-white"></span>&nbsp;&nbsp;&nbsp;<i class="fad fa-chair-office"></i> <span id="seatBelt">BUCKLED</span>&nbsp;&nbsp;&nbsp;<i class="fad fa-tachometer-alt-fast"></i>&nbsp;&nbsp;<span id="vehicleSpeed"></span>&nbsp;&nbsp;&nbsp;<span id="vehLights"></span>&nbsp;&nbsp;&nbsp;<i class="fad fa-key" id="engineState"></i></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 pl-1 textSize my-auto text-light pb-0 mb-0 mt-0"><i class="fad fa-map-marked-alt fa-fw"></i> <span id="streetBlock">TEST</span></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 p-0 text-danger pt-0 pb-0 mt-0"><span id="direction" style="font-size:18px; margin-left:43px;"></span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="scripting/external/jquery/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="pw_hud.js"></script>
+  </body>
+</html>
