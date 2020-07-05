@@ -1,6 +1,6 @@
 description 'PixelWorld Interaction Menu'
 name 'PixelWorld pw_interact'
-author 'PixelWorldRP [Chris Rogers] - https://pixelworldrp.com'
+author 'PixelWorldRP'
 version 'v1.0.0'
 
 client_scripts {

@@ -1,6 +1,6 @@
 description 'PixelWorld Whitelist and Queueing'
 name 'PixelWorld Whitelist and Queueing'
-author 'PixelWorldRP [Chris Rogers] - https://pixelworldrp.com'
+author 'PixelWorldRP'
 version 'v1.0.0'
 
 server_scripts {

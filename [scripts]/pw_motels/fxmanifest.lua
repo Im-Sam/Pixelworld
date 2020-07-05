@@ -3,7 +3,7 @@ games {'gta5'} -- 'gta5' for GTAv / 'rdr3' for Red Dead 2, 'gta5','rdr3' for bot
 
 description 'PixelWorld Motels'
 name 'PixelWorld: [pw_motels]'
-author 'PixelWorldRP [Chris Rogers && creaKtive] - https://pixelworldrp.com'
+author 'PixelWorldRP'
 version 'v1.0.0'
 
 server_scripts {

@@ -1,6 +1,6 @@
 description 'PixelWorld Police'
 name 'PixelWorld pw_police'
-author 'PixelWorldRP [Chris Rogers] - https://pixelworldrp.com'
+author 'PixelWorldRP'
 version 'v1.0.0'
 
 client_scripts {

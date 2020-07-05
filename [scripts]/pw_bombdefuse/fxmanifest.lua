@@ -3,7 +3,7 @@ games {'gta5'}
 
 description 'PixelWorld Bomb Defusal'
 name 'PixelWorld: pw_bombdefuse'
-author 'PixelWorldRP [creaKtive & Chris Rogers] - https://pixelworldrp.com'
+author 'PixelWorldRP'
 version 'v1.0.0'
 
 client_script('client/client.lua')

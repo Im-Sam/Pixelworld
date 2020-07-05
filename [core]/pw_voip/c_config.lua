@@ -34,14 +34,9 @@ TokoVoipConfig = {
 		-- Blocking screen informations
 		TSServer = "ts.pixelworldrp.com", -- TeamSpeak server address to be displayed on blocking screen
 		TSChannelSupport = "FiveM Support Room", -- TeamSpeak support channel name displayed on blocking screen
-		TSDownload = "https://www.pixelworldrp.com", -- Download link displayed on blocking screen
+		TSDownload = "teamspeak", -- Download link displayed on blocking screen
 		TSChannelWhitelist = { -- Black screen will not be displayed when users are in those TS channels
-			"Chris Local Development Server",
-			"creaKtive Local Development Server",
-			"Psycholiquid Local Development Server",
-			"Ultrunz Local Development Server",
-			"XxFri3ndlyxX Local Development Server",
-			"Dr Nick Local Development Server"
+			"",
 		},
 
 		-- The following is purely TS client settings, to match tastes

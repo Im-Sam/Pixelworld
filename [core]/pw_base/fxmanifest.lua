@@ -1,6 +1,6 @@
 description 'PixelWorld Base Framework'
 name 'PixelWorld Base Framework'
-author 'PixelWorldRP [Chris Rogers] - https://pixelworldrp.com'
+author 'PixelWorldRP'
 version 'v1.0.0'
 
 loadscreen_manual_shutdown 'yes'

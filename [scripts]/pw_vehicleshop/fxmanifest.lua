@@ -1,6 +1,6 @@
 description 'PixelWorld Vehicle Shop'
 name 'PixelWorld [pw_vehicleshop]'
-author 'PixelWorldRP [Chris Rogers] - https://pixelworldrp.com'
+author 'PixelWorldRP'
 version 'v1.0.0'
 
 -- These are the client side scripts the resource will load.

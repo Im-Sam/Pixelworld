@@ -1,7 +1,7 @@
 
 description 'PixelWorld Hud Display'
 name 'PixelWorld pw_hud'
-author 'PixelWorldRP [Chris Rogers] - https://pixelworldrp.com'
+author 'PixelWorldRP'
 
 client_scripts {
     'config/main.lua',

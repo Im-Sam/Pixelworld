@@ -1,6 +1,6 @@
 description 'PixelWorld Discord'
 name 'PixelWorld: pw_discord'
-author 'PixelWorldRP [Chris Rogers] - https://pixelworldrp.com'
+author 'PixelWorldRP'
 version 'v1.0.2'
 
 client_scripts {

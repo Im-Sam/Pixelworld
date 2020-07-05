@@ -1,10 +1,10 @@
 local PW, playerLoaded, playerData = nil, false, nil
 local Config = {}
 Config.Discord = {}
-Config.Discord.AppID        = 601704277961998346
+Config.Discord.AppID        = 313781520609574912   
 Config.Discord.AssetLg      = 'pwlarge'
 Config.Discord.AssetSm      = 'pwsmall'
-Config.Discord.SmallTxt     = 'Signup @ pixelworldrp.com'
+Config.Discord.SmallTxt     = 'Dev Enviroment'
 Config.Discord.LargeTxt     = 'PixelWorld Roleplay'
 local WaitTime = 1500
 local overRide = false

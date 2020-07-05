@@ -1,6 +1,6 @@
 description 'PixelWorld Weapons System'
 name 'PixelWorld pw_weapons'
-author 'PixelWorldRP [Chris Rogers] - https://pixelworldrp.com'
+author 'PixelWorldRP'
 version 'v1.0.1'
 
 client_scripts {

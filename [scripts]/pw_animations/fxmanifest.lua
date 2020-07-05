@@ -1,6 +1,6 @@
 description 'PixelWorld Animations'
 name 'PixelWorld: pw_animations'
-author 'PixelWorldRP [Chris Rogers] - https://pixelworldrp.com'
+author 'PixelWorldRP'
 version 'v1.0.0'
 
 server_scripts {

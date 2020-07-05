@@ -1,6 +1,6 @@
 description 'PixelWorld Properties'
 name 'PixelWorld pw_properties'
-author 'PixelWorldRP [creaKtive & Chris Rogers] - https://pixelworldrp.com'
+author 'PixelWorldRP'
 version 'v1.0.0'
 
 client_scripts {

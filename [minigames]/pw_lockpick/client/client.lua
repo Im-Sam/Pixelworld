@@ -1,10 +1,3 @@
---[[
-    PLEASE LEAVE THIS INTACT
-    Lockpicking MiniGame Coded by Chris Rogers for GTAV Use
-    Original Javascript was used from CodePen https://codepen.io/anon/pen/ydOeLo
-    Copyright 2019 All Rights Reserved
-    Please Do not Rename the resource, i use the name to see how many people are using the resource on statistics.
-]]
 
 PW = nil
 playerData, playerLoaded = nil, false

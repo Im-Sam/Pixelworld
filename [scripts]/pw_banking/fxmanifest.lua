@@ -3,7 +3,7 @@ games {'gta5'}
 
 description 'PixelWorld Banking'
 name 'PixelWorld: pw_banking'
-author 'PixelWorldRP [Chris Rogers] - https://pixelworldrp.com'
+author 'PixelWorldRP'
 version 'v1.0.2'
 
 server_scripts {

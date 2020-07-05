@@ -1,5 +1,5 @@
 local started = false
-local frameWorkVersion, primaryDevelopers = "4.0", "ChrisRogersUK + creaKtive"
+local frameWorkVersion, primaryDevelopers = "4.0"
 local allowScriptStart = false
 local allowwhiteListLoad = false
 local recentDisconnects = {}

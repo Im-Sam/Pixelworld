@@ -1,6 +1,6 @@
 description 'PixelWorld Keys System'
 name 'PixelWorld pw_keys'
-author 'PixelWorldRP [Chris Rogers] - https://pixelworldrp.com'
+author 'PixelWorldRP'
 version 'v1.0.0'
 
 client_scripts {

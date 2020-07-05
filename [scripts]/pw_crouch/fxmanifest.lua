@@ -1,6 +1,6 @@
 description 'PixelWorld Character Pointing'
 name 'PixelWorld: pw_point'
-author 'PixelWorldRP [Chris Rogers] - https://pixelworldrp.com'
+author 'PixelWorldRP'
 version 'v1.0.1'
 
 client_scripts {
